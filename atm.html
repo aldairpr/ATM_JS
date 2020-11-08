@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cajero automatico</title>
+        <style type="text/css">
+            body
+            {
+                background-color: #191970;
+                color: white;
+                font-family: 'Times New Roman';
+            }
+            #cabecera 
+            {
+                text-align:center;
+                color:white;
+                background-color:#000;
+                padding:0.1px;
+                font-size: medium; /*Tamaño de letra*/
+            }
+            #dinero_extraido
+            {
+                text-align: center;
+            }
+            #mostrar_caja
+            {
+                color:rgb(229, 255, 0);
+                font-family: "Arial";
+                font-size:19px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "cabecera">
+            <h1>Proceda a sacar su dinero</h1>
+        </div>
+        <p>
+            <img src="imagen_de_cajero/cajero.gif" id="cajero"  width = "450" height= "350"/>
+        </p>
+        <p id="mostrar_caja"></p>
+        <p>
+            <input type="number" id="dinero" />
+            <input type="button" value="Extraer" id="extraer"/>
+            <input type="button" value="Siguiente retiro" id="limpiar"/>
+        </p>
+        <div id="dinero_extraido">
+            <p id="resultado"></p>
+        </div>
+        <script src="cajero.js">
+        </script>
+    </body>
+</html>
