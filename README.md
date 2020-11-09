@@ -1,2 +1,2 @@
 # ATM_JS
-Programa de cajera automatico.
+Programa de cajero automatico.
